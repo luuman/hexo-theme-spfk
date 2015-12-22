@@ -1,0 +1,71 @@
+# Header
+
+menu:
+  闯前端: /
+  享阅读: /archives
+  乐运动: 
+  爱摄影: 
+
+  # 随笔: /tags/随笔
+
+# SubNav
+subnav:
+  weibo: "http://weibo.com/lishangmou"
+  github: "https://github.com/luuman"
+  zhihu: "https://www.zhihu.com/people/luuman"
+  mail: "512769206@qq.com"
+  google: "http://i.youku.com/shangmou"
+  rss: /atom.xml
+  twitter: "#"
+  facebook: "#"
+  #linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
+  #douban: "#"
+
+  #google: "#"
+
+
+
+# Content
+excerpt_link: more
+fancybox: true
+mathjax: true
+
+
+# Miscellaneous
+google_analytics: ''
+favicon: /img/favicon.png
+
+#你的头像url
+avatar: "/img/spfk.jpg"
+
+#是否开启分享
+share: true
+
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: true
+
+
+#是否开启云标签
+tagcloud: true
+
+#是否开启友情链接
+#不开启——
+#friends: false
+
+#开启——
+friends:
+  翁天信: http://blog.dandyweng.com/
+  岳宇星: http://yueyuxing.github.io/
+  Peter: http://happypeter.github.io/
+  Litten: http://litten.github.io/
+  MOxFIVE: http://MOxFIVE.github.io/
+  zipperary: http://zippera.github.io/
+
+
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+
+#开启——
+aboutme: 为什么我的眼里常含泪水，因为我对这土地爱得深沉！ 
