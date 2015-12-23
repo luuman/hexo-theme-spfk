@@ -1,4 +1,4 @@
-hexo-theme-yilia
+hexo-theme-spfk
 ================
 
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
@@ -16,6 +16,27 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 ![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
 
 —————————————————————
+
+主题结构：
+
+.
+├── languages         #多语言
+|   ├── default.yml  #默认语言
+|   └── zh-CN.yml    #中文语言
+├── layout           #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
+|   ├── _partial     #局部的布局，此目录下的*.ejs是对头尾等局部的控制
+|   └── _widget      #小挂件的布局，页面下方小挂件的控制
+├── source           #源码
+|   ├── css          #css源码 
+|   |   ├── _base    #*.styl基础css
+|   |   ├── _partial    #*.styl局部css
+|   |   ├── fonts       #字体
+|   |   ├── images      #图片
+|   |   └── style.styl #*.styl引入需要的css源码
+|   ├── fancybox      #fancybox效果源码
+|   └── js            #javascript源代码
+├── _config.yml       #主题配置文件
+└── README.md         #用GitHub的都知道
 
 关于主题：
 
@@ -73,7 +94,7 @@ git pull
 
 ##四、配置
 
-主题配置文件在主目录下的`_config.yml`：
+主题配置文件在主目录下的`_config.yml`：![_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
 
 ```
 # Header
@@ -82,58 +103,29 @@ menu:
   所有文章: /archives
   # 随笔: /tags/随笔
 
-# SubNav
-subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #douban: "#"
-  #mail: "#"
-  #facebook: "#"
-  #google: "#"
-  #twitter: "#"
-  #linkedin: "#"
+    #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key（http://duoshuo-key.duoshuo.com/）
+    #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+    duoshuo: true
 
-rss: /atom.xml
-
-# Content
-excerpt_link: more
-fancybox: true
-mathjax: true
-
-# Miscellaneous
-google_analytics: ''
-favicon: /favicon.png
-
-#你的头像url
-avatar: ""
-#是否开启分享
-share: true
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: true
-#是否开启云标签
-tagcloud: true
-
-#是否开启友情链接
-#不开启——
-#friends: false
-#开启——
-friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
-
-#是否开启“关于我”。
-#不开启——
-#aboutme: false
-#开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
 ```
+# 头像
+ 头像尺寸大概200*200px
+
 ##五、其他
 
 [同步你的instagram图片](https://github.com/litten/hexo-theme-yilia/wiki/%E5%90%8C%E6%AD%A5%E4%BD%A0%E7%9A%84instagram%E5%9B%BE%E7%89%87)
+
+
+
+bug抓取：
+
+* 移动端友情链接靠的太近
+    * 修改他们之间的间距
+* 侧边栏展示的内容有限
+    * 添加侧边栏滚动轴
+ * 你好
+    * 第
+* 你好
+    * 第
+* 你好
+    * 第

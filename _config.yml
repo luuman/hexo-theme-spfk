@@ -4,7 +4,7 @@ menu:
   闯前端: /
   享阅读: /archives
   乐运动: 
-  爱摄影: 
+  爱摄影: /instagram
 
   # 随笔: /tags/随笔
 
@@ -55,12 +55,21 @@ tagcloud: true
 
 #开启——
 friends:
-  翁天信: http://blog.dandyweng.com/
-  岳宇星: http://yueyuxing.github.io/
   Peter: http://happypeter.github.io/
+  dengo: http://dengo.org/
   Litten: http://litten.github.io/
   MOxFIVE: http://MOxFIVE.github.io/
+  岳宇星: http://yueyuxing.github.io/
+  JackieWu: http://www.wuchenglong.com/
   zipperary: http://zippera.github.io/
+  堂主: http://www.osmn00.com/translation/221.html
+  豪情: http://jikeytang.github.io/
+  不如: http://ibruce.info/
+  兮兮: http://www.ccwebsite.com/
+  翁天信: http://blog.dandyweng.com/
+  潘利强: http://www.plqblog.com/views/index.php
+  阮一峰: http://www.ruanyifeng.com/home.html
+
 
 
 #是否开启“关于我”。
