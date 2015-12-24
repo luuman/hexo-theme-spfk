@@ -1,3 +1,5 @@
+![luuman-ipad-iphone](https://raw.githubusercontent.com/luuman/luuman.github.io/master/img/luuman-ipad-iphone.jpg)
+![iPhone6](https://raw.githubusercontent.com/luuman/luuman.github.io/master/img/iPhone6-mockup.jpg)
 hexo-theme-spfk
 ================
 
@@ -19,24 +21,24 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 
 主题结构：
 
-.
-├── languages         #多语言
-|   ├── default.yml  #默认语言
-|   └── zh-CN.yml    #中文语言
-├── layout           #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
-|   ├── _partial     #局部的布局，此目录下的*.ejs是对头尾等局部的控制
-|   └── _widget      #小挂件的布局，页面下方小挂件的控制
-├── source           #源码
-|   ├── css          #css源码 
-|   |   ├── _base    #*.styl基础css
-|   |   ├── _partial    #*.styl局部css
-|   |   ├── fonts       #字体
-|   |   ├── images      #图片
-|   |   └── style.styl #*.styl引入需要的css源码
-|   ├── fancybox      #fancybox效果源码
-|   └── js            #javascript源代码
-├── _config.yml       #主题配置文件
-└── README.md         #用GitHub的都知道
+    .
+    ├── languages         #多语言
+    |   ├── default.yml  #默认语言
+    |   └── zh-CN.yml    #中文语言
+    ├── layout           #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
+    |   ├── _partial     #局部的布局，此目录下的*.ejs是对头尾等局部的控制
+    |   └── _widget      #小挂件的布局，页面下方小挂件的控制
+    ├── source           #源码
+    |   ├── css          #css源码 
+    |   |   ├── _base    #*.styl基础css
+    |   |   ├── _partial    #*.styl局部css
+    |   |   ├── fonts       #字体
+    |   |   ├── images      #图片
+    |   |   └── style.styl #*.styl引入需要的css源码
+    |   ├── fancybox      #fancybox效果源码
+    |   └── js            #javascript源代码
+    ├── _config.yml       #主题配置文件
+    └── README.md         #用GitHub的都知道
 
 关于主题：
 
@@ -48,12 +50,12 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 
 ##一、近期更新
 
-2015.6.14 - 模块化加载
-2015.2.21 - 移动侧重构&布局bug修改
-2014.11.7 - 增加“友情链接”“关于我”               
-2014.10.22 - 优化fancybox展示               
-2014.10.16 - 增加表格样式                 
-2014.9.19 - 云标签挂件                 
+    2015.6.14 - 模块化加载
+    2015.2.21 - 移动侧重构&布局bug修改
+    2014.11.7 - 增加“友情链接”“关于我”               
+    2014.10.22 - 优化fancybox展示               
+    2014.10.16 - 增加表格样式                 
+    2014.9.19 - 云标签挂件                 
 
 ##二、使用
 
@@ -76,25 +78,10 @@ git pull
 
 ##三、外观
 
-####**宽屏**
-![宽屏](http://littendomo.sinaapp.com/yilia/yilia-pc1.png)        
-
-####**宽屏文字**
-![宽屏文字](http://littendomo.sinaapp.com/yilia/yilia-pc2.png)   
-
-####**窄屏**
-![窄屏](http://littendomo.sinaapp.com/yilia/yilia-pc3.png)     
-
-####**同步instagram**
-![同步instagram](http://littendomo.sinaapp.com/yilia/yilia-pc4.png)
-
-####**移动端**
-![移动端](http://littendomo.sinaapp.com/yilia/yilia-mobile.png)
-![移动端](http://littendomo.sinaapp.com/yilia/yilia-mobile2.png)   
 
 ##四、配置
 
-主题配置文件在主目录下的`_config.yml`：![_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
+主题配置文件在主目录下的`_config.yml`：[_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
 
 ```
 # Header
@@ -120,7 +107,7 @@ menu:
 bug抓取：
 
 * 移动端友情链接靠的太近
-    * 修改他们之间的间距
+    * 修改他们之间的间距(mobile-slider.styl)
 * 侧边栏展示的内容有限
     * 添加侧边栏滚动轴
  * 你好
