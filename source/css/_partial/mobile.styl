@@ -214,11 +214,98 @@
 }
 
 #footer {
+    bottom: 10px;
     .footer-left{
         float: initial;
         margin-bottom: 10px;
     }
     .footer-right{
         float: initial;
+        margin-bottom: 10px;
     }
+}
+#container .visit {
+    margin-top: 1em;
+}
+
+/*目录*/
+#tocButton {
+    z-index: 100;
+    position: fixed;
+    width: 71px;
+    height: 29px;
+    left: 2px;
+    top: auto;
+    bottom: 5px;
+    border: none;
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    background-color: #ee6252;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.toc-article {
+    display: none;
+    z-index: 99;
+    left: 0;
+    height: auto;
+    width: auto;
+    bottom: 22px;
+    overflow: auto;
+    margin-left: 6px;
+    background: #3f3f3f;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    padding: 0.3rem;
+    border: 1px solid #080808;
+    .toc-title {
+        display: none;
+    }
+    .toc {
+        padding: 0.5em;
+    }
+    ol {
+        margin: 0;
+        padding: 0.5em;
+        border-radius: 5px;
+        ol {
+            padding: 0.1em 0;
+            padding-left: 1.2em;
+        }
+    }
+    a {
+        color: #767676;
+    }
+}
+/*导航*/
+.scroll {
+    bottom: 0;
+    a {
+        background-color: #3F3F3F;
+    }
+}
+
+.hide-labels {
+    position: fixed;
+    left: 42px;
+    top: 78px;
+    color: white;
+    opacity: .6;
+    &:hover {
+        color: none;
+        opacity: 1; 
+    }
+}
+
+#post-nav-button {
+    display: none;
+}
+/*多说 UA*/
+.ua {
+    display: none !important;
+}
+
+#header .social li:nth-child(5n) {
+    margin-right: 3px;
 }

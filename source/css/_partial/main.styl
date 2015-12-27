@@ -66,7 +66,7 @@
 		position:absolute;
 		right:0;
 		min-height:100%;
-		background:#eaeaea;
+		background:#3f3f3f;
 		left: 300px;
 		width: auto;
 	}
@@ -152,6 +152,13 @@
 			a{
 				font-size: 14px;
 				min-width: 300px;
+			}
+			a:hover{
+				color: #FFF;
+				background: #4D4D4D;
+				border-radius: 6px;
+			    padding: 3px;
+			    margin: 2px;
 			}
 		}
 	}
@@ -306,10 +313,128 @@
 	}
 }
 
-.duoshuo{
-	padding: 0 40px;
-}
+
 
 #disqus_thread{
 	padding: 0 40px;
+}
+
+
+.search {
+    width: 68%;
+    height: 18px;
+    margin-top: 1px;
+    padding: 0;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-bottom: 2px solid lightgray;
+    border-radius: 2px;
+    opacity: .2;
+    background: none;
+    &:hover {
+        border: 2px solid lightgray;
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    };
+}
+
+#scroll{
+    right: 0;
+}
+
+.scroll {
+    z-index: 999;
+    position: fixed;
+    bottom: 40px;
+    text-align: center;
+    line-height: 42px;
+    a {
+        display: block;
+        width: 29px;
+        height: 42px;
+        font-size: 28px;
+        &:last-child {
+            border-bottom: none;
+        };
+        .fa {
+            color: rgba(255, 255, 255, .8);
+        }
+        &:hover {
+            background: rgba(147, 181, 224, .3) !important; 
+            .fa {
+                color: white;
+            }
+        }
+    }
+}
+
+.hide-labels {
+    position: fixed;
+    left: 378px;
+    top: 30px;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    font-size: .9em;
+    font-weight: bold;
+    color: #666;
+    background: none;
+    opacity: .32;
+    -webkit-appearance: none;
+    &:hover {
+        color: #88acdb;
+        opacity: 1; 
+    }
+}
+
+#post-nav-button {
+    left: 300px;
+    a {
+        border-bottom-color: transparent;
+        background: none;
+        cursor: pointer;
+        .fa-times {
+            display: none;
+        }
+    }
+}
+
+.post-list {
+    display: none;
+    text-align: left;
+    font-size: .9em;
+    line-height: 1.3em;
+    list-style: decimal;
+    li {
+        margin: .4em 0 .1em .7em;
+        a {
+            color: gray;
+            &:hover {
+                color: ;
+                text-decoration: none;
+            }
+        }
+        &:hover {
+            background: ;
+            a {
+                color: #88acdb;
+            }
+        };
+   }
+}
+
+
+
+
+.duoshuo{
+	padding: 0 40px;
+}
+#busuanzi_value_site_uv,#busuanzi_value_page_pv{
+	color: #FFF;
+}
+#busuanzi_value_site_uv:hover,#busuanzi_value_page_pv:hover{
+	color: #999;
 }

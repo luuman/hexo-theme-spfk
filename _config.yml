@@ -1,11 +1,9 @@
 # Header
-
 menu:
   闯前端: /
   享阅读: /archives
   乐运动: 
   爱摄影: /instagram
-
   # 随笔: /tags/随笔
 
 # SubNav
@@ -20,19 +18,39 @@ subnav:
   facebook: "#"
   #linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
   #douban: "#"
-
   #google: "#"
-
-
+  #zhihu: "zhihu"
+  #douban: "douban"
+  #Facebook: "#"
+  #Google: "#"
+  #Twitter: "#"
+  #LinkedIn: "#"
+  #QQ: "#"
+  #微信: "Wechat"
+  #PayPal: "#"
+  #StackOverflow: "#"
+  #Instagram: "#"
+  #Flickr: "#"
+  
+# "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
+# "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
+# "0": white-gray background | 淳朴灰白背景
+background_image: 1
 
 # Content
-excerpt_link: more
+excerpt_link: 大航海 #修改more>>的文字
 fancybox: true
 mathjax: true
 
+# 是否开启动画效果
+animate: true
+
+# 是否在新窗口打开链接
+open_in_new: false
 
 # Miscellaneous
-google_analytics: ''
+#google_analytics: ''
+baidu_analytics: true
 favicon: /img/favicon.png
 
 #你的头像url
@@ -45,14 +63,12 @@ share: true
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
 duoshuo: luuman
 
-
 #是否开启云标签
 tagcloud: true
 
 #是否开启友情链接
 #不开启——
 #friends: false
-
 #开启——
 friends:
   Peter: http://happypeter.github.io/
@@ -60,6 +76,7 @@ friends:
   Litten: http://litten.github.io/
   MOxFIVE: http://MOxFIVE.github.io/
   岳宇星: http://yueyuxing.github.io/
+  DoubleV: http://www.vsay.cn/
   JackieWu: http://www.wuchenglong.com/
   zipperary: http://zippera.github.io/
   堂主: http://www.osmn00.com/translation/221.html
@@ -70,11 +87,8 @@ friends:
   潘利强: http://www.plqblog.com/views/index.php
   阮一峰: http://www.ruanyifeng.com/home.html
 
-
-
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
-
 #开启——
 aboutme: 为什么我的眼里常含泪水，因为我对这土地爱得深沉！ 

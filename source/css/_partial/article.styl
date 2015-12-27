@@ -357,35 +357,140 @@
     float: right;
   }
 }
-/*toc*/
-.toc-article
-  background #eee
-  border 1px solid #bbb
-  border-radius 10px
-  margin 1.5em 0 0.3em 1.5em
-  padding 1.2em 1em 0 1em
-  max-width 28%
+.bdshare-button-style2-24{
+  width: 218px;
+  margin: auto;
+  .bds_more {
+      display: none;
+  }
+}
 
-.toc-title
-  font-size 120%
+/* toc */
+#tocButton {
+    position: fixed;
+    border-radius: 6px;
+    width: 71px;
+    height: 29px;
+    left: 217px;
+    border: none;
+    background-color: #ee6252;
+    top: 344px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    &:hover {
+        color: #FFF;
+        background: #3F3F3F;
+    }
+}
+.toc-article {
+    position: fixed;
+    width: 256px;
+    left: 0;
+    top: 360px;
+    color: #999;
+    bottom: 0.7em;
+    padding: 10px;
+    margin-left: 0em;
+    margin: 20px 10px 10px 10px;
+    background: #3F3F3F;
+    border: 1px solid #080808;
+    border-radius: 6px;
+    overflow: auto;
+    -webkit-border-radius: 2.8%;
+    
+}
+.post-list li{
+      margin-left: 20px;
+      a{
+        color: #999;
+      }
+      a:hover{
+        color: #FFF;
+      }
+    }
+#toc {
+    float: right;
+    font-size: .9em;
+    line-height: 1.65em;
+    a {
+        color: #999;
+        &:visited {
+            color: #FFF;
+        } 
+        &:hover {
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+    li:hover {
+        background: none;
+        li:hover {
+            background: rgba(158, 188, 226, .21);
+        }
+    }
+    .toc-title {
+        font-weight: bold;
+        color: #999;
+        text-align: center;
+        display: block;
+    }
+    .toc {
+        padding: 10px;
+        padding-right: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+    ol {
+        margin-left: 0;
+    }
+    .toc-child {
+        padding-left: 1.25em;
+        margin: 4px 0; 
+    }
+    .toc-link:hover {
+        background: rgba(158, 188, 226, .21);
+    }
+}
 
 
+/* copyright */
+.copyright {
+    width: 85%;
+    max-width: 45em;
+    margin: 0 auto;
+    padding: .5em 1.8em;
+    border: 1px solid lightgray;
+    font-size: .93em;
+    line-height: 1.6em;
+    word-break: break-word;
+    background: rgba(255, 255, 255, .4);
+    span {
+        margin-right: 1em;
+        color: #B5B5B5;
+        font-weight: bold;
+    }
+    a {
+        color: gray;
+        &:hover {
+            font-weight: bold;
+            color: #a3d2a3;
+            text-decoration: underline;
+        }
+    }
+    &:hover p .copy-path::after {
+        content: "复制";
+    }
+    .post-url:hover {
+        font-weight: normal;
+    }
+    .copy-path {
+        margin-left: 1em;
+        &:hover {
+            color: gray;
+            cursor: pointer;
+        }
+    }
+}
 
-
-
-
-
-
-#toc
-  line-height 1em
-  font-size 0.9em
-  float right
-  .toc
-    padding 0
-    margin 1em
-    line-height 1.8em
-    li
-      list-style-type none
-
-  .toc-child 
-    margin-left 1em
