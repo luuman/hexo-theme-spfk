@@ -555,8 +555,16 @@ span.ua {
 #ds-thread #ds-reset .ds-meta {
     border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
-
-
+#ds-thread #ds-reset .ds-header {
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+    line-height: 30px;
+    padding: 0 12px;
+}
+#ds-thread #ds-reset #ds-hot-posts {
+     border: none; 
+}
 
 /* 简介 */
 #ds-reset .ds-highlight {
