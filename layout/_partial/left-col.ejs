@@ -16,7 +16,7 @@
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
-
+<input type="text" class="st-default-search-input" id="search" placeholder=" Search...">
 		<%if(theme.tagcloud){%>
 			<div id="switch-btn" class="switch-btn">
 				<div class="icon">
@@ -72,7 +72,7 @@
 					<nav class="header-nav">
 						<div class="social">
 							<% for (var i in theme.subnav){ %>
-								<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
+								<a class="fl <%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
 					        <%}%>
 						</div>
 					</nav>
