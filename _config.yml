@@ -32,21 +32,10 @@ subnav:
   #Instagram: "#"
   #Flickr: "#"
   
-  #fa-weibo: "http://weibo.com/lishangmou"
-  #fa-github: 
-  #fa-linkedin:
-  #fa-Instagram:
-  #fa-rss: 
-  #fa-twitter:
-  #fa-facebook:
-  #fa-google:
-  #fa-mail:
-  #fa-stackoverflow:
-  
 # "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
 # "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
 # "0": white-gray background | 淳朴灰白背景
-# background_image: 1
+background_image: 1
 
 # Content
 excerpt_link: 大航海 #修改more>>的文字
@@ -65,7 +54,7 @@ baidu_analytics: true
 favicon: /img/favicon.png
 
 #你的头像url
-avatar: "/img/head.jpg"
+avatar: "/img/spfk.jpg"
 
 #是否开启分享
 share: true
@@ -82,20 +71,24 @@ tagcloud: true
 #friends: false
 #开启——
 friends:
-  MOxFIVE: http://MOxFIVE.github.io/
+  Peter: http://happypeter.github.io/
   dengo: http://dengo.org/
   Litten: http://litten.github.io/
+  MOxFIVE: http://MOxFIVE.github.io/
+  岳宇星: http://yueyuxing.github.io/
   DoubleV: http://www.vsay.cn/
+  JackieWu: http://www.wuchenglong.com/
+  zipperary: http://zippera.github.io/
+  堂主: http://www.osmn00.com/translation/221.html
+  豪情: http://jikeytang.github.io/
+  不如: http://ibruce.info/
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
-  PuYart: http://puyart.net/
-
-swift_search:
-  enable: true
+  阮一峰: http://www.ruanyifeng.com/home.html
 
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 纠棱厚，海贼控；爱代码，强迫症；常熬夜，闹酩掰；人生短，逛今宵。
+aboutme: 为什么我的眼里常含泪水，因为我对这土地爱得深沉！ 
