@@ -630,3 +630,22 @@ span.ua {
     border-right: 5px solid rgb(63, 63, 63);
     border-top: 5px solid #0C0C0C;
 }
+/* 新回复弹窗 */
+#ds-notify {
+    position: fixed;
+    z-index: 9999;
+    max-width: 144px;
+    _width: 130px;
+    display: block;
+    float: none;
+    padding: 8px 12px;
+    background-color: #3F3F3F;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #2F2F2F;
+}
+#ds-notify #ds-reset ul.ds-notify-unread li a {
+    color: #FFF;
+    text-decoration: none;
+}

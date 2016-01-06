@@ -1,6 +1,6 @@
-// https://github.com/chriskempson/tomorrow-theme
+// https://github.com/luuman/hexo-theme-spfk
 
-code-bgc = #272822
+code-bgc = #002B36
 code-tag = #F92672
 code-attr = #A6E22E
 code-word = #FFFFFF
@@ -19,11 +19,17 @@ $code-block
   line-height: font-size * line-height
 
 $line-numbers
-  color: #666
+  color: #999
 
 .article-entry
   pre, code
     font-family: font-mono
+  blockquote
+    background-color: #555;
+    padding: 10px 15px;
+    word-break: break-word;
+    border-left: 5px solid #2f2f2f;
+    margin: 10px 0px 0px;
   code
     background: color-background
     padding: 0 0.3em
@@ -36,6 +42,19 @@ $line-numbers
       text-shadow: none
       padding: 0
       color: code-word
+  h1{
+    margin-top: 30px;
+  }
+  h2{
+    margin-top: 20px;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+  h3,h4,h5,h6{
+    margin-top: 20px;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
   .highlight
     @extend $code-block
     border-radius: 4px
@@ -106,43 +125,48 @@ $line-numbers
             text-decoration: underline
 
 pre
+  .doctype
+    color: #586e75
+  .tag
+    color: #839496
+  .title
+    color: #66D9EF
+  .strings
+    color: #2aa198
+  .attribute
+    color: #b58900
+  .cpp
+  .annotation
+  .command
+    color: color-link
   .comment
     color: code-comment
-
   .keyword
-  .function .keyword
+    color: code-keyword
+  .function
   .class .params
     color: #66D9EF
-   
-  .tag
-  .doctype
   .params
   .function
   .css .value
     color: code-word
-
   .css ~ * .tag
-  .title
   .at_rule
-  .at_rule .keyword
   .preprocessor
-  .preprocessor .keyword
     color: code-tag
-
-  .attribute
   .built_in
   .class
   .css ~ * .class
-  .function .title
+  .function
     color: code-attr
-
   .value
-  .string
-    color: code-value
-
   .number
     color: #7163D7
-
   .id
   .css ~ * .id
     color: code-argument
+  .link_label
+  .code
+  .operator
+  .link_url
+    color: color-link

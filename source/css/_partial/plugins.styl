@@ -1,16 +1,27 @@
+#content-wrapper1{
+
+}
+.wrapper1{
+
+}
+.inner1{
+  margin: 0 40px;
+}
+
 #plugin-list-header
   clearfix()
   margin: 40px 0
 
 #plugin-list-title
-  font-family: font-title
-  font-size: 36px
-  font-weight: 300
-  line-height: 1
-  float: left
+  font-family: "华文新魏";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  color: #FFF;
+  float: left;
 
 #plugin-list-count
-  color: color-gray
+  color: #FFF;
   padding-top: 1em
   text-align: right
   @media mq-normal
@@ -33,34 +44,37 @@
     margin-top: 0
 
 #plugin-list
-  margin: 40px -20px
-  display: flex
-  flex-flow: column
-  @media mq-tablet
-    flex-flow: row wrap
+  overflow: hidden;
 
 .plugin
   display: none
-  padding: 20px
+  padding: 30px 16px;
+  flex: 0 0 (100 / 3)%
   @media mq-tablet
     flex: 0 0 50%
-  @media mq-normal
-    flex: 0 0 (100 / 3)%
   &.on
     display: block
+    width: 290px;
+    max-height: 309px;
+    float: left;
 
 .plugin-name
   font-family: font-title
   font-weight: bold
-  color: color-link
+  color: #FFF
   font-size: 20px
   text-decoration: none
   line-height: 1
   &:hover
-    color: color-link-hover
+    color: #999
+  &:before
+    content: "\f019";
+    font: 16px FontAwesome;
+    margin-right: 4px;
 
 .plugin-desc
   line-height: line-height
+  color: #999;
   margin: 1em 0
 
 .plugin-tag-list
@@ -68,15 +82,17 @@
   line-height: 1.3
 
 .plugin-tag
-  color: color-gray
+  color: #FFF
   font-size: 0.9em
   text-decoration: none
   float: left
   margin-right: 10px
   &:hover
-    color: color-link-hover
+    color: #999
   &:before
-    content: "#"
+    content: "\f02b";
+    font: 16px FontAwesome;
+    margin-right: 4px;
 
 .plugin-screenshot
   margin-bottom: 15px
