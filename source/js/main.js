@@ -54,7 +54,7 @@ require([], function (){
 	}
 
 	//是否使用fancybox
-	if(spfkConfig.fancybox === true){
+	if(yiliaConfig.fancybox === true){
 		require(['/fancybox/jquery.fancybox.js'], function(pc){
 			var isFancy = $(".isFancy");
 			if(isFancy.length != 0){
@@ -70,7 +70,7 @@ require([], function (){
 		
 	}
 	//是否开启动画
-	if(spfkConfig.animate === true){
+	if(yiliaConfig.animate === true){
 
 		require(['/js/jquery.lazyload.js'], function(){
 			//avatar
@@ -80,7 +80,7 @@ require([], function (){
 			}
 		});
 		
-		if(spfkConfig.isHome === true){
+		if(yiliaConfig.isHome === true){
 			//content
 			function showArticle(){
 				$(".article").each(function(){
@@ -103,7 +103,7 @@ require([], function (){
 	}
 	
 	//是否新窗口打开链接
-	if(spfkConfig.open_in_new == true){
+	if(yiliaConfig.open_in_new == true){
 		$(".article a[href]").attr("target", "_blank")
 	}
 	

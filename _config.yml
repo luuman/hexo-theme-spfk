@@ -1,21 +1,23 @@
 # Header
 menu:
-  闯前端: /works
-  享阅读: /
-  来切磋: /about
-  爱摄影: /instagram
+  博客首页: /Resume/H1
+  前端页面: /works
+  前端导航: /FrontEndGuide/V1
+  静心阅读: /
+  品味摄影: /instagram
+  解忧杂货店: /about
   # 随笔: /tags/随笔
 
 # SubNav
 subnav:
-  weibo: "http://weibo.com/lishangmou"
+  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/luuman"
   zhihu: "https://www.zhihu.com/people/luuman"
-  mail: "512769206@qq.com"
+  weibo: "http://weibo.com/lishangmou"
   google: "http://i.youku.com/shangmou"
-  rss: /atom.xml
   twitter: "http://twitter.com/luuman"
   facebook: "#"
+  rss: /atom.xml
   #linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
   #douban: "#"
   #google: "#"
@@ -82,9 +84,9 @@ tagcloud: true
 #friends: false
 #开启——
 friends:
+  heero: http://dengo.org/
   MOxFIVE: http://MOxFIVE.github.io/
-  dengo: http://dengo.org/
-  Litten: http://litten.github.io/
+  heeroluo: http://heeroluo.net/
   DoubleV: http://www.vsay.cn/
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/

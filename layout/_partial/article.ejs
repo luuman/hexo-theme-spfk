@@ -14,23 +14,16 @@
       </header>
       <% if (!index){ %>
       <div class="article-info article-info-post">
-        <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <%- partial('post/category') %>
         <div class="clearfix"></div>
       </div>
       <% } %>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <% if (index && (post.description || post.excerpt)){ %>
-          <% if (post.description){ %>
-              <%- post.description %>
-          <% } else { %>
-              <%- post.excerpt %>
-          <% } %>
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
       <% } else { %>
-          <% if (is_page()){ %>
-              <%- partial('_partial/page') %>
-          <% } %>
         <%- post.content %>
       <% } %>
     </div>
@@ -41,9 +34,9 @@
           <a class="">置顶</a>
         </div>
       <% } %>
-      <%- partial('post/category') %>
       <%- partial('post/tag') %>
-      <% if (index && (post.description || post.excerpt)){ %>
+      <%- partial('post/category') %>
+      <% if (post.excerpt && index){ %>
         <p class="article-more-link">
           <a <% if (!theme.excerpt_link){ %>class="hidden"<% } %> href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
         </p>
@@ -56,19 +49,21 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-<% if (!index && post.toc){ %>
-    <%- partial('post/toc') %>
+
+<% if (!index && theme.share_jia){ %>
+<%- partial('post/share_jia') %>
 <% } %>
-<% if (!index && theme.share){ %>
-    <%- partial('post/share') %>
+
+<% if (!index && theme.share_addthis){ %>
+<%- partial('post/share_addthis') %>
 <% } %>
 
 <% if (!index && theme.duoshuo && post.comments){ %>
-    <%- partial('post/duoshuo', {
-        key: post.path,
-        title: post.title,
-        url: config.url+url_for(post.path),
-    }) %>
+<%- partial('post/duoshuo', {
+    key: post.slug,
+    title: post.title,
+    url: config.url+url_for(post.path)
+  }) %>
 <% } %>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
@@ -87,39 +82,4 @@
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
-<% } %>
-
-<%- partial('post/post-nav-button') %>
-
-<% if (post.fancybox != false){ %>
-    <% if (theme.fancybox){ %>
-        <%- css('fancybox/jquery.fancybox') %>
-        <script>
-            var yiliaConfig = {
-            fancybox: <%=theme.fancybox%>,
-            mathjax: <%=theme.mathjax%>,
-            animate: <%=theme.animate%>,
-            isHome: <%=is_home()%>,
-            isPost: <%=is_post()%>,
-            isArchive: <%=is_archive()%>,
-            isTag: <%=is_tag()%>,
-            isCategory: <%=is_category()%>,
-            open_in_new: <%=theme.open_in_new%>
-            }
-        </script>
-    <% } %>    
-<% } else { %>
-        <script>
-            var yiliaConfig = {
-            fancybox: false,
-            mathjax: <%=theme.mathjax%>,
-            animate: <%=theme.animate%>,
-            isHome: <%=is_home()%>,
-            isPost: <%=is_post()%>,
-            isArchive: <%=is_archive()%>,
-            isTag: <%=is_tag()%>,
-            isCategory: <%=is_category()%>,
-            open_in_new: <%=theme.open_in_new%>
-            }
-        </script>
 <% } %>

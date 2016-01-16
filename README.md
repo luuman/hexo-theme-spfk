@@ -1,11 +1,12 @@
+
+　　** Hexo 主题：**用了yilia主题一段时间，感觉还有很多可以提高的地方，就查阅资料，对其进行粗类的修改，但是，有其实还有很多不完善的地方，欢迎大家前捧场。
+没想到，这么多人喜欢黑色版本的，建议不是每个人都喜欢我的这些功能，所以准备个基础版本，插件可以看教程自行安装。
+
+[文章链接](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
+
 hexo-theme-spfk
 ================
           
-![luuman-ipad-iphone](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg)
-![iPhone6](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/iPhone6-mockup.jpg)
- 
-
-
 主题结构：
 
     .
@@ -27,6 +28,10 @@ hexo-theme-spfk
     ├── _config.yml       #主题配置文件
     └── README.md         #用GitHub的都知道
 
+
+![luuman-ipad-iphone](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg)
+![iPhone6](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/iPhone6-mockup.jpg)
+
 ##一、关于主题：
          
 
@@ -34,18 +39,18 @@ hexo-theme-spfk
 
 #### 安装
 
-``` bash
-$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+```
+$ git clone https://github.com/luuman/hexo-theme-spfk.git themes/spfk
 ```
 
 #### 配置
 
-修改hexo根目录下的 `_config.yml` ： `theme: yilia`
+修改hexo根目录下的 `_config.yml` ： `theme: spfk`
 
 #### 更新
 
-``` bash
-cd themes/yilia
+```
+cd themes/spfk
 git pull
 ```
 
@@ -54,7 +59,10 @@ git pull
 主题配置文件在主目录下的`_config.yml`：[_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
 
 ```
+
+
 #### Header
+J:\Hexo\Hexo\themes\spfk\_config.yml
 menu:
   主页: /
   所有文章: /archives
@@ -64,14 +72,14 @@ menu:
     #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
     duoshuo: true
 
+J:\Hexo\Hexo\themes\spfk\source\css\多说.css
 ```
 #### 头像
  头像尺寸大概200*200px
 
 
-#### bug抓取：
 
-* 移动端友情链接靠的太近
-    * 修改他们之间的间距(mobile-slider.styl)
-* 侧边栏展示的内容有限
-    * 添加侧边栏滚动轴
+
+#### Bug
+
+如有Bug欢迎大家前来反馈！
