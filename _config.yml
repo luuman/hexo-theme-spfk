@@ -1,14 +1,28 @@
-# Header
-menu:
-  博客首页: /Resume/H1
-  前端页面: /works
-  前端导航: /FrontEndGuide/V1
-  静心阅读: /
-  品味摄影: /instagram
-  解忧杂货店: /about
-  # 随笔: /tags/随笔
+# >>> Basic Setup | 基础设置 <<<
 
-# SubNav
+# Header | 主菜单
+## About Page: `hexo new page about`
+## Tags Cloud Page: `hexo new page tags`
+menu:
+  博客首页: /Home
+  作品展示: /works
+  留言打卡: /about
+  前端导航: /FrontEndGuide
+# 静心阅读: /tags
+# 光影之路: /instagram
+# 随笔: /tags/随笔
+
+# Link to your avatar | 填写头像地址
+avatar: /img/head.jpg
+
+# Small icon of Your site | 站点小图标地址
+favicon: /img/favicon.png
+
+# Social info. Bar | 社交信息展示
+## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
+## Encrypt email 加密邮件地址 http://ctrlq.org/encode/
+## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
+## https://github.com/hexojs/hexo-generator-feed
 subnav:
   mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/luuman"
@@ -18,86 +32,149 @@ subnav:
   twitter: "http://twitter.com/luuman"
   facebook: "#"
   rss: /atom.xml
-  #linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
-  #douban: "#"
-  #google: "#"
-  #zhihu: "zhihu"
-  #douban: "douban"
-  #Facebook: "#"
-  #Google: "#"
-  #Twitter: "#"
-  #LinkedIn: "#"
-  #QQ: "#"
-  #微信: "Wechat"
-  #PayPal: "#"
-  #StackOverflow: "#"
-  #Instagram: "#"
-  #Flickr: "#"
-  
-  #fa-weibo: "http://weibo.com/lishangmou"
-  #fa-github: 
-  #fa-linkedin:
-  #fa-Instagram:
-  #fa-rss: 
-  #fa-twitter:
-  #fa-facebook:
-  #fa-google:
-  #fa-mail:
-  #fa-stackoverflow:
-  
-# "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
-# "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
-# "0": white-gray background | 淳朴灰白背景
-# background_image: 1
+  # linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
+  # douban: "#"
+  # google: "#"
+  # zhihu: "zhihu"
+  # douban: "douban"
+  # Facebook: "#"
+  # Google: "#"
+  # Twitter: "#"
+  # LinkedIn: "#"
+  # QQ: "#"
+  # 微信: "Wechat"
+  # PayPal: "#"
+  # StackOverflow: "#"
+  # Instagram: "#"
+  # Flickr: "#"
 
-# Content
+
+# >>> Conments 评论系统 <<<
+# Chose ONE as your comment system and keep others disable.
+# 选一个作为网站评论系统，其他保持禁用。
+
+disqus: 
+  #on: true
+  shortname: 
+  # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
+  # It is unnecessary to enable disqus here if 
+  # you have set "disqus_shortname" in your site's "_config.yml" 
+
+duoshuo: 
+  on: true
+  domain: luuman
+  # 是否开启多说评论，http://duoshuo.com/create-site/
+  # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
+  # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
+
+youyan:
+  #on: true
+  id: 
+  # 是否开启友言评论，http://www.uyan.cc/index.php
+  # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
+  # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
+
+
+# >>> Style Customisation 样式自定义 <<<
+
+# Background | 背景
+## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
+## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
+## "0": white-gray background | 淳朴灰白背景
+background_image: 5
+
+highlight_style:
+  #on: true
+  inline_code: 1  # Value: 0 - 9 可选
+  code_block: 1  # Value: 0 - 4 
+  # Set inline_code to style highlight text
+  # Chose a highlight theme for code block
+  # 通过 inline_code 切换内置文本高亮样式
+  # 通过 code_block 切换内置代码高亮配色主题
+
+blockquote_style:
+  #on: true
+  blockquote: 1  # Value: 0 - 7 可选
+  # 自定义文章「引用部分」的样式
+
+# 左边栏宽度 px
+left_col_width: 300
+
+# 目录中标题不换行
+# Keep TOC title on the same line | 
+toc_nowrap: false
+
+# 自定义"阅读全文"链接按钮的显示文字
+# Customize the text on excerpt link
 excerpt_link: 大航海 #修改more>>的文字
-fancybox: true
-mathjax: true
 
-# 是否开启动画效果
+# 是否显示边栏中的搜索框（仅样式，未添加搜索功能）
+# Search Box in left column
+# search_box: true
+
+# 是否开启主页及加载头像时的动画效果
+# Animation in Homepage and Loading avatar
 animate: true
 
-# 是否在新窗口打开链接
-open_in_new: false
 
-# Miscellaneous
-#google_analytics: ''
-baidu_analytics: true
-favicon: /img/favicon.png
+# >>> Small features | 小功能设置 <<<
 
-#你的头像url
-avatar: "/img/head.jpg"
-
-#是否开启分享
-share: true
-
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key（http://duoshuo-key.duoshuo.com/）
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: luuman
-
-#是否开启云标签
+# 是否开启边栏多标签切换
+# Birdhouse button in left column
 tagcloud: true
 
-#是否开启友情链接
-#不开启——
-#friends: false
-#开启——
+# Blogroll, Link exchange | 友情链接
+# friends: false
 friends:
-  heero: http://dengo.org/
   MOxFIVE: http://MOxFIVE.github.io/
-  heeroluo: http://heeroluo.net/
   DoubleV: http://www.vsay.cn/
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
-  PuYart: http://puyart.net/
-
-swift_search:
-  enable: true
 
 #是否开启“关于我”。
-#不开启——
+aboutme: 专注于前端
 #aboutme: false
-#开启——
-aboutme: 纠棱厚，海贼控；爱代码，强迫症；常熬夜，闹酩掰；人生短，逛今宵。
+
+# 是否在新窗口打开链接
+# Open ALL link in a new tab
+open_in_new: false
+
+# Customize feed link 自定义订阅地址
+rss: /atom.xml
+
+
+# >>> Vendors | 第三方工具 & 服务 <<<
+
+# images viewer | 图片浏览器
+## http://www.fancyapps.com/fancybox/
+fancybox: true
+
+# Display Math(LaTeX, MathML...) | 数学公式支持
+## https://www.mathjax.org/
+mathjax: false
+
+# Socail Share | 是否开启分享
+# share: true
+baidushare: true
+
+# 百度、谷歌站长验证。填写 HTML 标签 content
+# Site Verification for Google and Baidu. HTML label content.
+baidu_site: 
+google_site: 
+
+# Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
+google_analytics: 
+
+# 不蒜子网站计数设置
+# http://ibruce.info/2015/04/04/busuanzi/
+visit_counter:
+  on: true
+  site_visit: 海贼到访数
+  page_visit: 本页阅读量
+
+# A标签提示
+TipTitle: true
+
+# Loading
+# Loading: true

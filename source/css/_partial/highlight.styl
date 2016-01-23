@@ -25,11 +25,17 @@ $line-numbers
   pre, code
     font-family: font-mono
   blockquote
-    background-color: #555;
-    padding: 10px 15px;
-    word-break: break-word;
-    border-left: 5px solid #2f2f2f;
-    margin: 10px 0px 0px;
+    background-color: #555
+    padding: 10px 15px
+    word-break: break-word
+    margin: 10px 0px
+    border-left: 4px solid #2f2f2f
+    border-top: 1px dashed #000
+    border-right: 1px dashed #000
+    border-bottom: 1px dashed #000
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
   code
     background: color-background
     padding: 0 0.3em
@@ -42,22 +48,73 @@ $line-numbers
       text-shadow: none
       padding: 0
       color: code-word
-  h1{
-    margin-top: 30px;
-  }
-  h2{
-    margin-top: 20px;
-    font-weight: 300;
-    padding-bottom: 5px;
-  }
-  h3,h4,h5,h6{
-    margin-top: 20px;
-    font-weight: 300;
-    padding-bottom: 5px;
-  }
+  p
+    code
+      margin: 0 3px
+      border: dashed 1px #22C3AA
+      color: #157A6B
+      padding: 1px 8px
+      font-size: 90%
+      -webkit-border-radius: 5px
+      border-radius: 5px
+      font-family: Consolas,"Courier New",Courier
+      text-shadow: none
+      background-color: #EEF3F0
+      word-wrap: break-word
+      white-space: pre
+    a::before
+      content: " * "
+  h1
+    font-size: 1.5em
+    margin-top: 30px
+  h2
+    font-size: 1.3em
+    margin-top: 20px
+    font-weight: 300
+    padding-bottom: 5px
+    margin: .5em auto
+    font-weight: 700
+    color: #999
+    padding-bottom: 5px
+    text-align: center
+  h2::after,h2::before
+    content: " —— "
+  h3
+    font-size: 1.1em
+    margin-top: 20px
+    font-weight: 300
+    padding-bottom: 5px
+  h3:hover
+    content: " > "
+  h4,h5,h6
+    font-size: 1em
+    margin-top: 20px
+    font-weight: 300
+    padding-bottom: 5px
+  hr
+    background-color: #2f2f2f
+    height: 3px
+    border: 0
+    margin: 10px 0
+  li:hover
+    background: rgba(158,188,226,.21)
+
+  .highlight::before
+    content: attr(data-lang) " code"
+    display: block
+    background-color: #2F2E2E
+    margin: 0 -16px 16px -16px
+    padding: 8px 16px
+    color: #EFEFEF
+    font-family: Lato,"Microsoft YaHei",sans-serif
+    font-size: 1.1rem
+    text-shadow: none
+    border-bottom: dashed 1px #000
+    text-transform:capitalize
   .highlight
     @extend $code-block
     border-radius: 4px
+    padding: 0 10px
     pre
       border: none
       margin: 0

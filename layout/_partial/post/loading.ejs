@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/loading-style.css">
+<div id="loader-wrapper">
+	<div id="loader"></div>
+</div>
+<!-- loading -->
+<script>window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\/script>')</script>
+<script type="text/javascript">
+    $(window).load(function() { 
+        $('#loader').fadeOut();                    
+            $('#loader-wrapper').delay(50).fadeOut('slow');
+        $('body').delay(50).css({'overflow-y':'visible'});
+    })
+</script>

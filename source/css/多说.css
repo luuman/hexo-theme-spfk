@@ -649,3 +649,34 @@ span.ua {
     color: #FFF;
     text-decoration: none;
 }
+#ds-wrapper #ds-reset .ds-dialog-inner {
+    width: 100%;
+    position: relative;
+    border: 1px solid #000;
+    background: #3F3F41;
+    border-radius: 6px;
+}
+#ds-wrapper #ds-reset h2 {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    color: #999;
+}
+#ds-wrapper #ds-reset .ds-unread-list li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+    line-height: 1.5em;
+    color: #777;
+}
+#ds-wrapper #ds-reset .ds-dialog-footer {
+    display: none;
+    clear: both;
+    border-top: 1px dotted #ccc;
+    padding: 10px 15px 6px;
+}
+#ds-wrapper #ds-reset .ds-unread-list li a[rel~="author"] {
+    color: #FFF;
+}

@@ -41,16 +41,25 @@ html, body, #container
   height: 100%
 
 body
-  font-family: "微软雅黑","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size:16px;
+  font-family: "微软雅黑", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: #fff;
   color: #999;
   -webkit-overflow-scrolling: touch
 
+::selection 
+  background: rgba(147, 181, 224, .6);
+  color: white;
+
+h2,h3,h4,h5,h6 {
+  font-family: font-serif, font-chs;
+}
 h1,h2,h3{
   display: block;
 }
 h1 {
-  font-size:1.5em
+  font-size: 1.5em;
+  font-family: "Segoe UI", font-sans, font-chs;
 }
 h2 {
   font-size:1.3em
@@ -103,12 +112,14 @@ a {
 @import "_partial/archive"
 @import "_partial/highlight"
 @import "_partial/footer"
+@import "_partial/baidushare"
 @import "_partial/share"
 @import "_partial/page"
 @import "_partial/instagram"
 @import "_partial/tagcloud"
 @import "_partial/scroll"
 @import "_partial/mobile-slider"
+@import "_partial/post/youyan"
 @import "_partial/plugins"
 
 if sidebar

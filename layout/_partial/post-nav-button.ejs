@@ -1,5 +1,4 @@
 <% if (is_post()){ %>
-
     <div class="scroll" id="post-nav-button">
         <% if (post.prev){ %>
             <a href="<%- url_for(post.prev.path) %>" title="上一篇: <%= post.prev.title %>">
@@ -8,9 +7,7 @@
         <% } else { %>
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         <% } %>
-
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
         <% if (post.next){ %>
             <a href="<%- url_for(post.next.path) %>" title="下一篇: <%= post.next.title %>">
                 <i class="fa fa-angle-right"></i>
@@ -19,7 +16,6 @@
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         <% } %>
     </div>
-
     <%- list_posts({amount: 999}) %>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
@@ -29,12 +25,16 @@
             $(".fa-bars, .fa-times").toggle();
             $(".post-list").toggle(300);
             if ($(".toc").length > 0) {
-                $("#toc, #tocButton").toggle(200);
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
             }
             else {
-                $(".switch-btn, .switch-area").toggle(200);
+                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>
-
 <% } %>
