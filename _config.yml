@@ -62,7 +62,7 @@ disqus:
 
 duoshuo: 
   on: true
-  domain: luuman
+  domain:
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
