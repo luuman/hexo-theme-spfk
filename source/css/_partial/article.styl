@@ -161,28 +161,20 @@
   }
   ul{
     li:before{
-      content: "";
-      width: 6px;
-      height: 6px;
-      border: 1px solid #999;
-      border-radius: 10px;
-      background: #aaa;
-      display: inline-block;
-      margin-right: 10px;
-      float: left;
-      margin-top: 12px;
     }
   }
   ul,ol{
     font-size: 14px;
-    margin: 10px 0px;  
   }
   li{
     ul,ol{
       margin-left: 30px;
       li:before{
-        content: "";
-        background: #dedede;
+        content: "\f05d";
+        font: normal normal normal 14px/1 FontAwesome;
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 28px;
       }
     }
   }
@@ -224,23 +216,24 @@
   table{
     width:100%;
     border: 1px solid #dedede;
-    margin: 15px 0;
+    margin: 20px 0;
+    color: #FFF;
     border-collapse:collapse;
     tr,td{
       height:35px;
     }
     thead{
       tr {
-        background: #f8f8f8;
+        background: #2D2D2D;
       }
     }
     tbody{
       tr:hover{
-        background: #efefef;
+        background: #151414;
       }
     }
     td,th{
-      border: 1px solid #dedede;
+      border: 1px solid #020202;
       padding: 0 10px;
     }
   }

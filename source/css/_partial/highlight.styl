@@ -51,19 +51,32 @@ $line-numbers
   p
     code
       margin: 0 3px
-      border: dashed 1px #22C3AA
-      color: #157A6B
+      border: dashed 1px #000
+      color: #FFF
       padding: 1px 8px
       font-size: 90%
       -webkit-border-radius: 5px
       border-radius: 5px
       font-family: Consolas,"Courier New",Courier
       text-shadow: none
-      background-color: #EEF3F0
+      background-color: #002B36
       word-wrap: break-word
       white-space: pre
+    a
+      border: dashed 1px #000
+      padding: 1px 8px
+      border-radius: 5px
+      background-color: #2F2E2E
+      word-wrap: break-word
+      white-space: pre
+      margin: 2px
+      display: inline-block
     a::before
-      content: " * "
+      padding-right: 6px
+      content: "\f0c1"
+      font: normal normal normal 14px/1 FontAwesome
+    a:hover
+      color: #FFF
   h1
     font-size: 1.5em
     margin-top: 30px
@@ -80,29 +93,74 @@ $line-numbers
   h2::after,h2::before
     content: " —— "
   h3
-    font-size: 1.1em
-    margin-top: 20px
-    font-weight: 300
-    padding-bottom: 5px
+    margin: 0.5em auto
+    color: #fff
+    background: rgba(0, 0, 0, 0.27)
+    border: 1px dashed #020202
+    padding: 0.2em 0.6em
+    font-weight: normal
+    border-radius: 6px
   h3:hover
     content: " > "
-  h4,h5,h6
-    font-size: 1em
-    margin-top: 20px
-    font-weight: 300
-    padding-bottom: 5px
+  h4
+    margin: 0.5em auto
+    color: #fff
+    background: #5A5A5A
+    border: 1px dashed #020202
+    padding: 0.2em 0.6em
+    font-weight: normal
+    -webkit-border-radius: 6px
+    border-radius: 6px
+  h5
+    margin: 0.5em auto
+    color: #fff
+    background: #8E8D8D
+    border: 1px dashed #020202
+    padding: 0.2em 0.6em
+    font-weight: normal
+    -webkit-border-radius: 6px
+    border-radius: 6px
+  h6
+    margin: 0.5em auto
+    color: #fff
+    border: 1px dashed #020202
+    padding: 0.2em 0.6em
+    font-weight: normal
+    -webkit-border-radius: 6px
+    border-radius: 6px
   hr
     background-color: #2f2f2f
     height: 3px
     border: 0
     margin: 10px 0
+  ul
+    li:before
+      content: "\f05d";
+      font: normal normal normal 14px/1 FontAwesome;
+      display: inline-block;
+      margin: 0 10px;
+      line-height: 28px;
+      ul
+        li
+          margin-left: 20px
+        li:before
+          content: "\f05d";
+          font: normal normal normal 14px/1 FontAwesome;
+          display: inline-block;
+          margin: 0 10px;
+          line-height: 28px;
+  ol
+    li
+      list-style: decimal;
+      margin: 0 10px;
+
   li:hover
-    background: rgba(158,188,226,.21)
+    background-color: #2E2E2E;
 
   .highlight::before
     content: attr(data-lang) " code"
     display: block
-    background-color: #2F2E2E
+    background-color: #0083A0
     margin: 0 -16px 16px -16px
     padding: 8px 16px
     color: #EFEFEF
@@ -120,11 +178,19 @@ $line-numbers
       margin: 0
       padding: 0
     table
-      margin: 0
+      margin: 20px 0
       width: auto
+      color: #FFF
+      thead 
+        tr
+          background: #2D2D2D
+        tr:hover
+          background: #151414
     td
       border: none
       padding: 0
+    th
+      border: 1.5px dashed #020202
     figcaption
       clearfix()
       font-size: 0.85em

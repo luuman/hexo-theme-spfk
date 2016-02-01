@@ -62,7 +62,7 @@ disqus:
 
 duoshuo: 
   on: true
-  domain:
+  domain: luums
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
@@ -78,10 +78,13 @@ youyan:
 # >>> Style Customisation 样式自定义 <<<
 
 # Background | 背景
-## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
-## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
-## "0": white-gray background | 淳朴灰白背景
-background_image: 5
+## "background_sum": show images form /source/background/的图片数目
+## "on: true": 自动随机显示这5张图片
+## "on: false": 自定义显示图片设置background_image: 5
+background:
+  on: true
+  background_sum: 21
+  background_image: 1
 
 highlight_style:
   #on: true
@@ -131,9 +134,10 @@ friends:
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
+  hankin技术宅: http://www.hankin.cn/
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 90后，水瓶座普通男青年！爱折腾，爱运动，更爱游离于错综复杂的编码与逻辑中，无法自拔。
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -157,6 +161,7 @@ mathjax: false
 # Socail Share | 是否开启分享
 # share: true
 baidushare: true
+#showshare: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
@@ -170,7 +175,7 @@ google_analytics:
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: 海贼到访数
+  site_visit: 本站到访数
   page_visit: 本页阅读量
 
 # A标签提示

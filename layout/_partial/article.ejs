@@ -65,6 +65,9 @@
 <% if (!index && theme.baidushare){ %>
 <%- partial('post/baidu-share') %>
 <% } %>
+<% if (!index && theme.showshare){ %>
+<%- partial('post/showshare') %>
+<% } %>
 <% if (!index && post.comments){ %>
     <% if (theme.duoshuo.on) { %>
       <%- partial('comments/duoshuo', {
@@ -93,7 +96,4 @@
             yiliaConfig.fancybox = false;
         <% } %>
     </script>
-<% } %>
-<% if (!index && theme.TipTitle){ %>
-  <%- partial('post/TipTitle') %>
 <% } %>
