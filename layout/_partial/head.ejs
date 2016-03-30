@@ -26,14 +26,14 @@
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%- config.root %><%- theme.favicon %>">
   <% } %>
   <% if (theme.animate){ %>
-  <%- css('//cdn.bootcss.com/animate.css/3.5.0/animate.min.css') %>
+      <%- css('//cdn.bootcss.com/animate.css/3.5.0/animate.min.css') %>
   <% } %>
   <%- css('css/style') %>
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="<%- config.root %>font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="<%- config.root %>apple-touch-icon.png">
   <% if (is_home()){ %>
     <% if (theme.baidu_site) { %> 
       <meta name="baidu-site-verification" content="<%- theme.baidu_site %>" />
@@ -43,13 +43,14 @@
     <% } %>
   <% } %>
   <% if (theme.fancybox){ %>
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+      <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css">
   <% } %>
   <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+    <script src="<%- config.root %>js/pace.js"></script>
+    <link href="<%- config.root %>css/pace/pace-theme-flash.css" rel="stylesheet" />
   <script>
       var yiliaConfig = {
+          rootUrl: '<%=config.root%>',
           fancybox: <%=theme.fancybox%>,
           animate: <%=theme.animate%>,
           isHome: <%=is_home()%>,
