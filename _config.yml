@@ -62,7 +62,7 @@ disqus:
 
 duoshuo: 
   on: true
-  domain: luums
+  domain: 
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
@@ -83,8 +83,9 @@ youyan:
 ## "on: false": 自定义显示图片设置background_image: 5
 background:
   on: true
-  background_sum: 21
-  background_image: 1
+  #on: false
+  background_sum: 24
+  background_image: 109
 
 highlight_style:
   #on: true
@@ -134,10 +135,11 @@ friends:
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
-  hankin技术宅: http://www.hankin.cn/
+  hankin: http://www.hankin.cn/
+  waydrow: http://blog.waydrow.com/
 
 #是否开启“关于我”。
-aboutme: 90后，水瓶座普通男青年！爱折腾，爱运动，更爱游离于错综复杂的编码与逻辑中，无法自拔。
+aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -165,8 +167,8 @@ baidushare: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-baidu_site: 
-google_site: 
+google_site: # pFW527fHrjfI0si2w4NQ0w3cTw12AvvuohAu1PUfqKA
+baidu_site: #c167b9feb4f0b208b712c79629c188e4
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X, or Baidu Analytics hash key
 google_analytics:
@@ -176,7 +178,7 @@ baidu_analytics:
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: 本站到访数
+  site_visit: 海贼到访数
   page_visit: 本页阅读量
 
 # A标签提示

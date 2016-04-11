@@ -13,7 +13,9 @@
                 <i class="fa fa-angle-right"></i>
             </a>
         <% } else { %>
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="<%- url_for(post.next.path) %>" title="下一篇: <%= post.next.title %>">
+                <i class="fa fa-angle-right"></i>
+            </a>
         <% } %>
     </div>
     <%- list_posts({amount: 999}) %>

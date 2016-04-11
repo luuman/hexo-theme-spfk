@@ -1,11 +1,11 @@
 <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
-        <a href="<%- config.root %>" class="profilepic">
+        <a href="/" class="profilepic">
             <% if (theme.animate){ %>
-            <img lazy-src="<%- config.root %><%=theme.avatar%>" class="js-avatar">
+            <img lazy-src="<%=theme.avatar%>" class="js-avatar">
             <%}else{%>
-            <img src="<%- config.root %><%=theme.avatar%>" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+            <img src="<%=theme.avatar%>" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
             <%}%>
         </a>
 
@@ -18,7 +18,7 @@
         <%}%>
         <% if (theme.search_box){ %>
             <form>
-                <input type="text" class="search" placeholder=" Search...">
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
             </form>
         <%}%>
         <%if(theme.tagcloud){%>

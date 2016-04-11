@@ -1,15 +1,33 @@
 <%- js('http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min') %>
 <%- js('js/main') %>
-<%- partial('background') %>
+<%- partial('_partial/background') %>
 <%- partial('analytics/google-analytics') %>
 <%- partial('analytics/baidu-analytics') %>
 <% if (theme.mathjax){ %>
 <%- partial('mathjax') %>
 <% } %>
 <%- partial('scrolling-button') %>
-<%- partial('hide-labels') %>
+<%- partial('_partial/hide-labels') %>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 <% if (theme.TipTitle){ %>
   <%- partial('post/TipTitle') %>
 <% } %>
+<% if (theme.search_box){ %>
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search").onclick = function(){
+            console.log("search")
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>
+<%}%>

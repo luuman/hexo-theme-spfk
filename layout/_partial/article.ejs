@@ -60,13 +60,13 @@
     <%- partial('_partial/toc') %>
 <% } %>
 <% if (!index && theme.share){ %>
-<%- partial('post/share') %>
+<%- partial('share/share') %>
 <% } %>
 <% if (!index && theme.baidushare){ %>
-<%- partial('post/baidu-share') %>
+<%- partial('share/baidu-share') %>
 <% } %>
 <% if (!index && theme.showshare){ %>
-<%- partial('post/showshare') %>
+<%- partial('share/showshare') %>
 <% } %>
 <% if (!index && post.comments){ %>
     <% if (theme.duoshuo.on) { %>
