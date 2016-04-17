@@ -13,10 +13,10 @@ menu:
 # 随笔: /tags/随笔
 
 # Link to your avatar | 填写头像地址
-avatar: img/head.jpg
+avatar: /img/head.jpg
 
 # Small icon of Your site | 站点小图标地址
-favicon: img/favicon.png
+favicon: /img/favicon.png
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
