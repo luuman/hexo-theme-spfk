@@ -64,13 +64,15 @@ $line-numbers
       white-space: pre
     a
       border: dashed 1px #000
-      padding: 1px 8px
+      padding: 8px 8px
       border-radius: 5px
       background-color: #2F2E2E
       word-wrap: break-word
       white-space: pre
       margin: 2px
       display: inline-block
+    a.fancy-ctn.fancybox::before
+      display: none
     a::before
       padding-right: 6px
       content: "\f0c1"
@@ -135,27 +137,27 @@ $line-numbers
     margin: 10px 0
   ul
     li:before
-      content: "\f05d";
-      font: normal normal normal 14px/1 FontAwesome;
-      display: inline-block;
-      margin: 0 10px;
-      line-height: 28px;
+      content: "\f05d"
+      font: normal normal normal 14px/1 FontAwesome
+      display: inline-block
+      margin: 0 10px
+      line-height: 28px
       ul
         li
           margin-left: 20px
         li:before
-          content: "\f05d";
-          font: normal normal normal 14px/1 FontAwesome;
-          display: inline-block;
-          margin: 0 10px;
-          line-height: 28px;
+          content: "\f05d"
+          font: normal normal normal 14px/1 FontAwesome
+          display: inline-block
+          margin: 0 10px
+          line-height: 28px
   ol
     li
-      list-style: decimal;
-      margin: 0 10px;
+      list-style: decimal
+      margin: 0 10px
 
   li:hover
-    background-color: #2E2E2E;
+    background-color: #2E2E2E
 
   .highlight::before
     content: attr(data-lang) " code"
