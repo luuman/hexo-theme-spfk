@@ -2,7 +2,7 @@
 没想到，这么多人喜欢黑色版本的，建议不是每个人都喜欢我的这些功能，所以准备个基础版本，插件可以看教程自行安装。
 
 
-注意：使用本主题请仔细查看[SPFK Hexo使用介绍](http://luuman.github.io/2016/01/15/Hexo-Theme/)，没有使用过Hexo的同学可以看看[GitHub Hexo搭建](http://luuman.github.io/2015/12/27/GitHub+Hexo/)，另外还有一个我自己搭建时，插件的安装教程[Hexo插件安装](http://luuman.github.io/2015/12/27/Hexo-Theme/)
+注意：使用本主题请仔细查看[SPFK Hexo使用介绍](http://luuman.github.io/categories/Hexo/)，没有使用过Hexo的同学可以看看[GitHub Hexo搭建](http://luuman.github.io/categories/Hexo/)，另外还有一个我自己搭建时，插件的安装教程[Hexo插件安装](http://luuman.github.io/categories/Hexo/)
 
 
 正如前辈们所说，我们使用博客的目的是分享经验，总结自己，督促自己不断提升。如果你有不喜欢，不断的改进吧。只要你玩的开心！（请不要再这浪费太多经历，去丰富你的博客内容吧，骚年！）
