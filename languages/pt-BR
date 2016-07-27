@@ -47,7 +47,7 @@ counter:
   archive_posts:
     zero: Nenhuma postagem.
     one: 1 postagem.
-    other: "%d postagens not total."
+    other: "%d postagens no total."
 
 state:
   posts: postagens
