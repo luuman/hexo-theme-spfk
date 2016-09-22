@@ -26,28 +26,21 @@ favicon: /img/favicon.png
 subnav:
   mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/luuman"
-  zhihu: "https://www.zhihu.com/people/luuman"
-  weibo: "http://weibo.com/lishangmou"
-  google: "http://i.youku.com/shangmou"
-  twitter: "http: //twitter.com/luuman"
-  facebook: "#"
-  rss: /atom.xml
-  # linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
-  # douban: "#"
-  # google: "#"
-  # zhihu: "zhihu"
-  # douban: "douban"
-  # Facebook: "#"
-  # Google: "#"
-  # Twitter: "#"
-  # LinkedIn: "#"
+  zhihu: "#"
+  weibo: "#"
+  google: "#"
+  twitter: "#"
+  linkedin: "#"
+  # facebook: "#"
+  # rss: /atom.xml
+  # pinterest: "#"
   # QQ: "#"
-  # 微信: "Wechat"
-  # PayPal: "#"
-  # StackOverflow: "#"
+  # wechat: "#"
+  # douban: "#"
+  # pinboard: "#"
+  # stackoverflow: "#"
   # Instagram: "#"
-  # Flickr: "#"
-
+  # segmentfault: "#"
 
 # >>> Conments 评论系统 <<<
 # Chose ONE as your comment system and keep others disable.
