@@ -2,7 +2,7 @@
     <script>
         $(document).ready(function() {
             var backgroundnum = <%= theme.background.background_sum %>;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            var backgroundimg = "url(<%- config.root %>background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
             $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
             $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
         })
@@ -11,7 +11,7 @@
     <script>
         $(document).ready(function() {
             var backgroundnum = <%= theme.background.background_image %>;
-            var backgroundimg = "url(/background/bg-" + backgroundnum +".jpg)";
+            var backgroundimg = "url(<%- config.root %>background/bg-" + backgroundnum +".jpg)";
             $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
             $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
         })

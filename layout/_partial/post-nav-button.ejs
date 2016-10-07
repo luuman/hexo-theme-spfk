@@ -5,7 +5,7 @@
                 <i class="fa fa-angle-left"></i>
             </a>
         <% } else { %>
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="<%- config.root %>" title="回到主页"><i class="fa fa-home"></i></a>
         <% } %>
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         <% if (post.next){ %>
@@ -13,7 +13,7 @@
                 <i class="fa fa-angle-right"></i>
             </a>
         <% } else { %>
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="<%- config.root %>" title="回到主页"><i class="fa fa-home"></i></a>
         <% } %>
     </div>
     <%- list_posts({amount: 999}) %>
