@@ -1,14 +1,16 @@
 // https://github.com/luuman/hexo-theme-spfk
 
-code-bgc = #002B36
-code-tag = #F92672
-code-attr = #A6E22E
-code-word = #FFFFFF
-code-value = #E6DB74
-code-number = #9E90FF
-code-keyword = #66D9EF
-code-comment = #75715E
-code-argument = #FD971F
+@import "_partial/customise/code-block"
+
+code-bgc = highlight-background
+code-tag = highlight-yellow 
+code-attr = highlight-blue
+code-word = highlight-foreground
+code-value = highlight-green
+code-number = highlight-aqua
+code-keyword = highlight-purple
+code-comment = highlight-comment
+code-argument = highlight-orange
 
 $code-block
   background: code-bgc
@@ -19,7 +21,7 @@ $code-block
   line-height: font-size * line-height
 
 $line-numbers
-  color: #999
+  color: code-number
 
 .article-entry
   pre, code
@@ -37,7 +39,7 @@ $line-numbers
     -moz-box-sizing: border-box
     box-sizing: border-box
   code
-    background: color-background
+    background: color-inline-background
     padding: 0 0.3em
     border: none
   pre
@@ -52,14 +54,14 @@ $line-numbers
     code
       margin: 0 3px
       border: dashed 1px #000
-      color: #FFF
+      color: color-inline
       padding: 1px 8px
       font-size: 90%
       -webkit-border-radius: 5px
       border-radius: 5px
       font-family: Consolas,"Courier New",Courier
       text-shadow: none
-      background-color: #002B36
+      background-color: color-inline-background
       word-wrap: break-word
       white-space: pre
     a
@@ -209,6 +211,7 @@ $line-numbers
         text-shadow: none
     .line
       font-size: 15px
+	  color: highlight-foreground
   .gist
     margin: 0 article-padding * -1
     border-style: solid
@@ -255,7 +258,7 @@ pre
     color: #839496
   .title
     color: #66D9EF
-  .strings
+  .string
     color: #2aa198
   .attribute
     color: #b58900
@@ -273,7 +276,7 @@ pre
   .params
   .function
   .css .value
-    color: code-word
+    color: code-argument
   .css ~ * .tag
   .at_rule
   .preprocessor
