@@ -1,18 +1,18 @@
 // https://github.com/chriskempson/tomorrow-theme
 
     // Tomorrow
-    highlight-background   = rgba(249, 249, 249, .5)
-    highlight-current-line = #efefef
-    highlight-selection    = #d6d6d6
-    highlight-foreground   = #4d4d4c
-    highlight-comment      = #8e908c
-    highlight-red          = #c82829
-    highlight-orange       = #f5871f
-    highlight-yellow       = #eab700
-    highlight-green        = #718c00
-    highlight-aqua         = #3e999f
-    highlight-blue         = #4271ae
-    highlight-purple       = #8959a8
+    highlight-background   = #002B36
+    highlight-current-line = #2a2a2a
+    highlight-selection    = #424242
+    highlight-foreground   = #FFFFFF
+    highlight-comment      = #75715E
+    highlight-red          = #d54e53
+    highlight-orange       = #FD971F
+    highlight-yellow       = #F92672
+    highlight-green        = #E6DB74
+    highlight-aqua         = #9E90FF
+    highlight-blue         = #A6E22E
+    highlight-purple       = #66D9EF
 
 highlight_style = hexo-config("highlight_style.on")
 code_block = hexo-config("highlight_style.code_block")
@@ -20,8 +20,8 @@ code_block = hexo-config("highlight_style.code_block")
 if highlight_style
 
     // Tomorrow Night Eighties
-    if code_block
-        highlight-background   = rgba(51, 51, 51, .85)
+    if code_block == "1"
+        highlight-background   = #333333
         highlight-current-line = #393939
         highlight-selection    = #515151
         highlight-foreground   = #cccccc
@@ -36,7 +36,7 @@ if highlight_style
 
     // Tomorrow Night
     if code_block == "2"
-        highlight-background   = rgba(32, 34, 37, .85)
+        highlight-background   = #202225
         highlight-current-line = #282a2e
         highlight-selection    = #373b41
         highlight-foreground   = #c5c8c6
@@ -51,7 +51,7 @@ if highlight_style
 
     // Tomorrow Night Blue
     if code_block == "3"
-        highlight-background   = rgba(0, 40, 91, .8)
+        highlight-background   = #00285B
         highlight-current-line = #00346e
         highlight-selection    = #003f8e
         highlight-foreground   = #ffffff
@@ -66,7 +66,7 @@ if highlight_style
 
     // Tomorrow Night Bright
     if code_block == "4"
-        highlight-background   = rgba(0, 0, 0, .67)
+        highlight-background   = #000000
         highlight-current-line = #2a2a2a
         highlight-selection    = #424242
         highlight-foreground   = #eaeaea
@@ -78,3 +78,18 @@ if highlight_style
         highlight-aqua         = #70c0b1
         highlight-blue         = #7aa6da
         highlight-purple       = #c397d8
+
+    // luuman spfk like
+    if code_block == "5"
+        highlight-background   = #002B36
+        highlight-current-line = #2a2a2a
+        highlight-selection    = #424242
+        highlight-foreground   = #FFFFFF
+        highlight-comment      = #75715E
+        highlight-red          = #d54e53
+        highlight-orange       = #FD971F
+        highlight-yellow       = #F92672
+        highlight-green        = #E6DB74
+        highlight-aqua         = #9E90FF
+        highlight-blue         = #A6E22E
+        highlight-purple       = #66D9EF

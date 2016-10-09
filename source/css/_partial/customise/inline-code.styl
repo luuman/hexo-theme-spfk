@@ -1,30 +1,34 @@
-.article-entry code
-    color gray
-    background rgba(248, 237, 223, .5)
-    padding .05em .3em
-    border-radius 3px
-    if highlight_style
-        var inline_code = hexo-config("highlight_style.inline_code")
-        color white
-        if !inline_code
-            color gray
-        if inline_code
-            background rgba(153, 204, 153, .7)
-        if inline_code == "2"
-            color #f48385
-            background rgba(199,38,79,0.07)
-        if inline_code == "3"
-            color gray
-            background rgba(255, 250, 165, .7)
-        if inline_code == "4"
-            background rgba(136, 172, 219, .65)
-        if inline_code == "5"
-            background rgba(239, 117, 34, .42)
-        if inline_code == "6"
-            background rgba(217, 83, 79, .45)
-        if inline_code == "7"
-            background rgba(129, 138, 145, .35)
-        if inline_code == "8"
-            background rgba(91, 192, 222, .6)
-        if inline_code == "9"
-            background rgba(250, 250, 250, .6)
+
+color-inline = #999
+color-inline-background = #002B36
+color-inline-border-color = #ccc
+
+
+inline_code = hexo-config("highlight_style.inline_code")
+if inline_code == "1"
+	color-inline = #FFF
+	color-inline-background = rgba(153, 204, 153, .7)
+	color-inline-border-color = #7EA299
+if inline_code == "2"
+	color-inline = #f48385
+	color-inline-background = rgba(199,38,79,0.07)
+if inline_code == "3"
+	color-inline = #FFF
+	color-inline-background = rgba(255, 250, 165, .7)
+if inline_code == "4"
+	color-inline-background = rgba(136, 172, 219, .65)
+if inline_code == "5"
+	color-inline = #999
+	code-number = #999
+	color-inline-background = #002B36
+	color-inline-border-color = #ccc
+if inline_code == "6"
+	color-inline-background = rgba(217, 83, 79, .45)
+if inline_code == "7"
+	color-inline-background = rgba(129, 138, 145, .35)
+if inline_code == "8"
+	color-inline-background = rgba(91, 192, 222, .6)
+if inline_code == "9"
+	color-inline-background = rgba(250, 250, 250, .6)
+    
+    
