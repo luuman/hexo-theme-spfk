@@ -1,3 +1,4 @@
+@import "customise/inline-code"
 .body-wrap{
   margin-bottom: 80px;
 }
@@ -147,8 +148,10 @@
   p code,li code{
     padding: 1px 3px;
     margin: 0 3px;
-    background: #ddd;
-    border: 1px solid #ccc;
+	color: color-inline
+    background: color-inline-background;
+    border: 1px dashed color-inline-border-color;
+	border-radius: 3px;
     font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
     word-wrap: break-word;
     font-size: 14px;
@@ -251,6 +254,12 @@
         }
       }
     }
+  }
+  code{
+    color: color-inline;
+    background: color-inline-background;
+    padding: 1px 3px;
+    border-radius: 5px;
   }
 }
 
