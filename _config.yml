@@ -82,8 +82,8 @@ background:
 
 highlight_style:
   on: true
-  inline_code: 7
-  code_block: 4
+  inline_code: 5
+  code_block: 5
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式 Value: 0 - 9 可选
@@ -123,13 +123,7 @@ tagcloud: true
 # Blogroll, Link exchange | 友情链接
 # friends: false
 friends:
-  MOxFIVE: http://MOxFIVE.github.io/
-  DoubleV: http://www.vsay.cn/
-  兮兮: http://www.ccwebsite.com/
-  翁天信: http://blog.dandyweng.com/
-  潘利强: http://www.plqblog.com/views/index.php
-  hankin: http://www.hankin.cn/
-  waydrow: http://blog.waydrow.com/
+  name: http://luuman.github.io/
 
 #是否开启“关于我”。
 aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中
