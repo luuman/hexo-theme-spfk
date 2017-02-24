@@ -125,6 +125,19 @@ tagcloud: true
 friends:
   name: http://luuman.github.io/
 
+# 打赏
+# 请在需要打赏的文章的md文件头部，设置属性reward: true
+
+# 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 2
+# 打赏wording
+reward_wording1: '纯属好玩'
+reward_wording2: '扫码打赏，你说多少就多少'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/img/alipay.jpg
+alipay: /img/alipay.png
+# 微信二维码图片地址
+weixin: /img/weixin.png
+
 #是否开启“关于我”。
 aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中
 #aboutme: false
