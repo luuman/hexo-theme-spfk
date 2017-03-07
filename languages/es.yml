@@ -1,0 +1,56 @@
+title:
+  archive: Archivo
+  category: Categoria
+  tag: Etiqueta
+
+menu:
+  menu: Menu
+  home: Home
+  archives: Archivos
+  categories: Categorias
+  tags: Etiquetas
+  about: About
+  search: Buscar
+  link : Links
+
+sidebar:
+  overview: Overview
+  toc: Tabla de contenidos
+
+post:
+  posted: Posteado en
+  in: En
+  read_more: Leer mas
+  untitled: Sin titulo
+  toc_empty: Este post no tiene una tabla de contenido
+  share: Compartir con
+
+page:
+  totally: Totales
+  tags: etiquetas
+
+footer:
+  powered: "Desarrollado por %s"
+  theme: Tema
+
+counter:
+  tag_cloud:
+    zero: No etiquetas
+    one: 1 etiqueta en total
+    other: "%d etiquetas en total"
+
+  categories:
+    zero: No categorias
+    one: 1 categoria en total
+    other: "%d categorias en total"
+
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "%d posts en total."
+
+state:
+  posts: posts
+  pages: paginas
+  tags: etiquetas
+  categories: categorias
