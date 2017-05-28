@@ -1,0 +1,14 @@
+<div id="gitments"></div>
+<script src="<%- config.root %>js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: '<%= owner%>',
+      repo: '<%= repo%>',
+      oauth: {
+        client_id: '<%= client_id%>',
+        client_secret: '<%= client_secret%>',
+      },
+    })
+    gitment.render('gitments')
+</script>
