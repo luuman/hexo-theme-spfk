@@ -61,7 +61,7 @@ duoshuo:
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 gitment:
-  on: true
+  #on: true
   owner: luuman
   repo: luuman.github.io
   client_id: 
@@ -74,6 +74,17 @@ youyan:
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
 
+valine:
+  #on: true # 如果要使用Valine，请设置on: true
+  appId:  #your leancloud appId
+  appKey:  #your leancloud appKey
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mm # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: false # valine mail notify (true/false) 
+  lang: zh-cn
 
 # >>> Style Customisation 样式自定义 <<<
 
