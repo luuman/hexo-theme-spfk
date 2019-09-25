@@ -1,4 +1,4 @@
-![luuman-ipad-iphone](https://hexo.io/build/screenshots/spfk-025d1cd820.png)
+![luuman-ipad-iphone](https://d33wubrfki0l68.cloudfront.net/0b083601ff91e92712019fa58facb09e22501fac/7a995/build/screenshots/spfk-688461139f.jpeg)
 
 　　** SPFK Hexo 主题：**用了yilia主题一段时间，感觉还有很多可以提高的地方，就查阅资料，对其进行粗类的修改，但是，有其实还有很多不完善的地方，欢迎大家前捧场。
 没想到，这么多人喜欢黑色版本的，建议不是每个人都喜欢我的这些功能，所以准备个基础版本，插件可以看教程自行安装。
