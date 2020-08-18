@@ -1,7 +1,7 @@
 title:
   archive: Arquivo
   category: Categoria
-  tag: Tag
+  tag: Etiqueta
 
 menu:
   menu: Menu
@@ -14,15 +14,15 @@ menu:
   link: Links
 
 sidebar:
-  overview: Overview
-  toc: Tabela de coteúdos
+  overview: Visão geral
+  toc: Tabela de conteúdos
 
 post:
   posted: Postado em
   in: Em
   read_more: Leia mais
   untitled: Sem título
-  toc_empty: Esta postagem não possui uma tabela com conteúdos
+  toc_empty: Esta postagem não contém uma tabela com conteúdos
   share: Compartilhar
 
 page:
@@ -30,14 +30,14 @@ page:
   tags: tags
 
 footer:
-  powered: "Powered by %s"
+  powered: "Desenvolvido por %s"
   theme: Tema
 
 counter:
   tag_cloud:
-    zero: Nenhuma tag
-    one: Total de 1 tag
-    other: "%d tags no total"
+    zero: Nenhuma etiqueta
+    one: Total de 1 etiqueta
+    other: "%d etiquetas no total"
 
   categories:
     zero: Nenhuma categoria
@@ -47,7 +47,7 @@ counter:
   archive_posts:
     zero: Nenhuma postagem.
     one: 1 postagem.
-    other: "%d postagens no total."
+    other: "%d postagens no total"
 
 state:
   posts: postagens
